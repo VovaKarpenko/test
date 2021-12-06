@@ -1,6 +1,6 @@
 package Interface;
 
-public class Person implements Info<Person>  {
+public class Person implements Comparable<Person>  {
    private final int tall;
     private final int weight;
     private final String name;
@@ -14,11 +14,6 @@ public class Person implements Info<Person>  {
     @Override
     public int compareTo(Person o) {
         return Integer.compare(this.weight, o.weight);
-    }
-
-    @Override
-    public void info() {
-        System.out.println("tall "+ tall + " name " + name + " weight " + weight);
     }
 }
 

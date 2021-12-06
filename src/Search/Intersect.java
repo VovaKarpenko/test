@@ -1,6 +1,6 @@
 package Search;
 
-public class Main {
+public class Intersect {
     public static void main(String[] args) {
         int[] mas1 = {2, 5, 6, 8, 9, 11, 17, 20, 22,23};
         int[] mas2 = {3, 4, 7, 9, 10, 11, 14, 16, 17};
