@@ -23,6 +23,4 @@ public class HiddenNumber {
 //        max = max * (max + 1) / 2;
 //        int result = max - fullArray;
 //        System.out.println(result);
-
-
-
+//1 2 4   4 + 3 + 2 + 1 = 10      4 + 2 + 1     10-7 = 3           4 * 5 / 2 = 10 - 7 = 3

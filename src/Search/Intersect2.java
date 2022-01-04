@@ -19,19 +19,14 @@ public class Intersect2 {
         int inArr1 = 0;
         int inArr2 = 0;
         while (array1[inArr1] < last2 + 1 && array2[inArr2] < last1 + 1) {
-            if (array1[inArr1] > array2[inArr2]) {
-                inArr2 += 1;
-            } else if (array1[inArr1] == array2[inArr2]) {
+            if (array1[inArr1] == array2[inArr2]) {
                 arrayTheSame.add(array1[inArr1]);
                 inArr1 += 1;
                 inArr2 += 1;
-            }
-            if (array1[inArr1] < array2[inArr2]) {
-                inArr1 += 1;
-            } else if (array1[inArr1] == array2[inArr2]) {
-                arrayTheSame.add(array1[inArr1]);
-                inArr1 += 1;
+            }else if (array1[inArr1] > array2[inArr2]){
                 inArr2 += 1;
+            }else if (array1[inArr1] < array2[inArr2]){
+                inArr1 += 1;
             }
         }
         return arrayTheSame;

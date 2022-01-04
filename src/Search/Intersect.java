@@ -7,7 +7,7 @@ public class Intersect {
         int inMas1 = 0;
         int inMas2 = 0;
 
-        while (inMas2 < mas2.length - 1 || inMas1 < mas1.length - 1) {
+        while (inMas2 < mas2.length-1  || inMas1 < mas1.length-1 ) {
             if (mas1[inMas1] == mas2[inMas2]) {
                 System.out.println(mas1[inMas1]);
                 if (inMas2 < mas2.length - 1) {
@@ -17,7 +17,7 @@ public class Intersect {
                     inMas1++;
                 }
             }
-            if (mas1[inMas1] < mas2[inMas2] && inMas1 < mas1.length - 1) {
+            if (mas1[inMas1] < mas2[inMas2] ) {
                 inMas1++;
             }
             if (mas1[inMas1] == mas2[inMas2]) {
@@ -29,7 +29,7 @@ public class Intersect {
                     inMas1++;
                 }
             }
-            if (mas1[inMas1] > mas2[inMas2] && inMas2 < mas2.length - 1) {
+            if (mas1[inMas1] > mas2[inMas2]) {
                 inMas2++;
             }
         }
