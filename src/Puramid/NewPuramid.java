@@ -1,21 +1,13 @@
 package Puramid;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class NewPuramid {
 
     static int[][] Tower;
-   static int disk = 4;
-    public static void main(String[] args) {
-        int from = 0;
-        int buf = 1;
-        int to = 2;
+   static int disk = 10;
 
-
-        makeTower(disk);
-
-        diskTower(disk, from, buf, to);
-    }
     static int[] arrayHeightFrom ={0, disk, disk};
    static int[] arrayHeightTo = {-1,disk-1,disk-1};
 
@@ -72,6 +64,20 @@ public class NewPuramid {
         }
         setTower(array);
     }
+
+    public static void main(String[] args) {
+        int from = 0;
+        int buf = 1;
+        int to = 2;
+
+
+
+        makeTower(disk);
+        print(Tower);
+        diskTower(disk, from, buf, to);
+    }
+
+
 }
 
 
